@@ -22,3 +22,6 @@
 - Resolved faults reported in versions 0.1.1-0.1.9 and 1.0.0
 - Added Projects, Blogs, and About Me pages
 - Overall stability and performance improvements
+
+### 2.0.1 (2024-04-14)
+- Fixed all UI issues from previous versions

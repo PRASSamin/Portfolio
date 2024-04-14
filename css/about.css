@@ -24,6 +24,7 @@
 }
 
 .pras-himg {
+  -webkit-filter: var(--pras-himg);
   filter: var(--pras-himg);
 }
 
@@ -31,9 +32,18 @@
   position: relative;
   margin: auto auto;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   margin-bottom: 80px;
 }
@@ -53,15 +63,31 @@
   height: var(--circle-diameter);
   border-radius: 50%;
   --rotation: calc(45deg + calc(var(--percent) * 1.8 * 1deg));
+  -webkit-transform: rotate(var(--rotation));
+  -ms-transform: rotate(var(--rotation));
   transform: rotate(var(--rotation));
+  -webkit-transition: -webkit-transform var(--animation-duration) ease;
+  transition: -webkit-transform var(--animation-duration) ease;
+  -o-transition: transform var(--animation-duration) ease;
   transition: transform var(--animation-duration) ease;
+  transition: transform var(--animation-duration) ease,
+    -webkit-transform var(--animation-duration) ease;
 }
 
 .info {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 0.8rem;
   min-width: 7.5rem;
@@ -92,12 +118,24 @@
 }
 
 .NavContent {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   .my-self {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -145,6 +183,8 @@
   }
 
   .ExpertiseContainer2 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     padding-top: 0px !important;
   }
@@ -177,6 +217,7 @@
     h1 {
       font-size: 25px;
       white-space: nowrap;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden;
       width: 100%;
@@ -187,6 +228,9 @@
   }
 
   .IntroContainer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
     flex-direction: column !important;
     padding-top: 40px !important;
     padding-bottom: 4rem !important;
@@ -296,6 +340,7 @@
     h1 {
       font-size: 25px;
       white-space: nowrap;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden;
       width: 100%;
@@ -328,6 +373,7 @@
     h1 {
       font-size: 35px;
       white-space: nowrap;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden;
       width: 100%;
@@ -363,50 +409,72 @@
 }
 
 .shadowhtml {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shahtml);
   box-shadow: 0px 0px 7px 5px var(--shahtml);
 }
 .shadowcss {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shacss);
   box-shadow: 0px 0px 7px 5px var(--shacss);
 }
 .shadowjs {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shajs);
   box-shadow: 0px 0px 7px 5px var(--shajs);
 }
 .shadownode {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shanode);
   box-shadow: 0px 0px 7px 5px var(--shanode);
 }
 .shadowflutter {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shaflut);
   box-shadow: 0px 0px 7px 5px var(--shaflut);
 }
 .shadowreact {
+  -webkit-box-shadow: 0px 0px 7px 5px var(--shareact);
   box-shadow: 0px 0px 7px 5px var(--shareact);
 }
 
 .html {
   width: 0%;
+  -webkit-animation: html 2s forwards;
   animation: html 2s forwards;
 }
 
 .css {
   width: 0%;
+  -webkit-animation: css 2s forwards;
   animation: css 2s forwards;
 }
 
 .js {
   width: 0%;
+  -webkit-animation: js 2s forwards;
   animation: js 2s forwards;
 }
 
 .nodejs {
   width: 0%;
+  -webkit-animation: nodejs 2s forwards;
   animation: nodejs 2s forwards;
 }
 .flutter {
   width: 0%;
+  -webkit-animation: flutter 2s forwards;
   animation: flutter 2s forwards;
 }
 .reactjs {
   width: 0%;
+  -webkit-animation: reactjs 2s forwards;
   animation: reactjs 2s forwards;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 96%;
+  }
 }
 
 @keyframes html {
@@ -416,6 +484,16 @@
 
   100% {
     width: 96%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 95%;
   }
 }
 
@@ -429,7 +507,27 @@
   }
 }
 
+@-webkit-keyframes js {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
 @keyframes js {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes nodejs {
   0% {
     width: 0%;
   }
@@ -449,6 +547,16 @@
   }
 }
 
+@-webkit-keyframes flutter {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
 @keyframes flutter {
   0% {
     width: 0%;
@@ -456,6 +564,15 @@
 
   100% {
     width: 40%;
+  }
+}
+@-webkit-keyframes reactjs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
   }
 }
 @keyframes reactjs {

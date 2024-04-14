@@ -1,4 +1,4 @@
-# PRAS Portfolio Website (v2.0.0)
+# PRAS Portfolio Website (v2.0.1)
 
 Welcome to the v2.0.0 stable version of my portfolio website!
 
