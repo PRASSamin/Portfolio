@@ -25,3 +25,6 @@
 
 ### 2.0.1 (2024-04-14)
 - Fixed all UI issues from previous versions
+
+### 2.0.2 (2024-04-15)
+- added new project(PRAS BOOK API) to the projects page
