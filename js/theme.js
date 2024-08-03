@@ -9,7 +9,6 @@ if (savedTheme) {
 
 function applyTheme(theme) {
   if (theme === "dark") {
-    console.log("dark mode");
 
     document.documentElement.setAttribute("data-theme", "dark");
 
@@ -92,7 +91,6 @@ function applyTheme(theme) {
     Icon.classList.add("fa-moon");
     Icon.classList.remove("fa-sun");
 
-    console.log("light mode");
     document.documentElement.setAttribute("data-theme", "light");
     document.documentElement.style.setProperty("--mtext", "#000");
     document.documentElement.style.setProperty("--bg", "#ffffff");

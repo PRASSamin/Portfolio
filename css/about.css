@@ -451,6 +451,12 @@
   animation: js 2s forwards;
 }
 
+.python {
+  width: 0%;
+  -webkit-animation: python 2s forwards;
+  animation: python 2s forwards;
+}
+
 .nodejs {
   width: 0%;
   -webkit-animation: nodejs 2s forwards;
@@ -513,7 +519,7 @@
   }
 
   100% {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -523,7 +529,27 @@
   }
 
   100% {
-    width: 80%;
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes python {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 30%;
   }
 }
 
@@ -572,7 +598,7 @@
   }
 
   100% {
-    width: 75%;
+    width: 85%;
   }
 }
 @keyframes reactjs {
@@ -581,6 +607,6 @@
   }
 
   100% {
-    width: 75%;
+    width: 85%;
   }
 }

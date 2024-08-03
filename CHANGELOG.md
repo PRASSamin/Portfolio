@@ -28,3 +28,7 @@
 
 ### 2.0.2 (2024-04-15)
 - added new project(PRAS BOOK API) to the projects page
+
+
+### 2.0.3 (2024-08-04)
+- added new project(TZR, JWTify, Library Management System) to the projects page

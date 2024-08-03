@@ -1,7 +1,7 @@
 window.onload = function () {
   const progressBars = document.querySelectorAll(".bar");
   const numberElements = document.querySelectorAll(".number");
-  const targetPercentages = [96, 95, 80, 80, 40, 75];
+  const targetPercentages = [96, 95, 90, 30, 80, 40, 85];
   const animationDuration = 1000;
   const intervalDurations = targetPercentages.map(
     (percent) => animationDuration / percent
@@ -64,8 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const jsProgressBar = document.querySelector(".js");
   const jsCounter = document.getElementById("jsCounter");
-  animateCounter(jsCounter, 79, 1500);
-  jsProgressBar.style.width = "80%";
+  animateCounter(jsCounter, 89.5, 1500);
+  jsProgressBar.style.width = "90%";
+
+  const pythonProgressBar = document.querySelector(".python");
+  const pythonCounter = document.getElementById("pythonCounter");
+  animateCounter(pythonCounter, 30, 1500);
+  pythonProgressBar.style.width = "30%";
 
   const nodejsProgressBar = document.querySelector(".nodejs");
   const nodejsCounter = document.getElementById("nodejsCounter");
@@ -79,6 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const reactjs = document.querySelector(".reactjs");
   const reactjsCounter = document.getElementById("reactjsCounter");
-  animateCounter(reactjsCounter, 75, 1500);
-  reactjs.style.width = "75%";
+  animateCounter(reactjsCounter, 85, 1500);
+  reactjs.style.width = "85%";
 });

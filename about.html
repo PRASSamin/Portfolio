@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="js/redirect.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Blogs</title>
@@ -75,10 +76,10 @@
               href="https://github.com/PRASSamin"
               className="font-bold"
               >PRAS Samin</a
-            >, a versatile Web Developer with a fervent passion for Flutter
+            >, a versatile Web Developer with a fervent passion for Python
             Development. With nearly 4 years of experience, I've successfully
             managed a wide array of development projects, leveraging
-            technologies like Node.js, React.js, Express.js, and more to deliver
+            technologies like Node.js, React.js, Express.js, Django, and more to deliver
             exceptional results. My expertise extends to crafting sleek and
             responsive interfaces using Tailwind CSS and Bootstrap. Committed to
             exceeding expectations, my goal is to ensure 100% client
@@ -206,7 +207,25 @@
             </div>
           </div>
           <div class="w-1/3 progress srr" id="progress">
-            84bf08
+            <div class="bar-overflow">
+              <div
+                class="bar"
+                id="bar"
+                style="
+                  border: 1.1rem solid #1e486a;
+                  border-bottom-color: #4B8BBE;
+                  border-right-color: #4B8BBE;
+                  --percent: 0;
+                  --animation-duration: 1s;
+                "
+              ></div>
+            </div>
+            <div class="info" style="color: #4B8BBE">
+              <h2 class="number" id="number" data-number="0%"></h2>
+              <p>Python (Learning)</p>
+            </div>
+          </div>
+          <div class="w-1/3 progress srr" id="progress">
             <div class="bar-overflow">
               <div
                 class="bar"
@@ -226,7 +245,6 @@
             </div>
           </div>
           <div class="w-1/3 progress srr" id="progress">
-            9397ef
             <div class="bar-overflow">
               <div
                 class="bar"
@@ -242,11 +260,10 @@
             </div>
             <div class="info" style="color: #9397ef">
               <h2 class="number" id="number" data-number="0%"></h2>
-              <p>Flutter (Learning)</p>
+              <p>Flutter</p>
             </div>
           </div>
           <div class="w-1/3 progress srr" id="progress">
-            087ea4
             <div class="bar-overflow">
               <div
                 class="bar"
@@ -265,6 +282,7 @@
               <p>ReactJS</p>
             </div>
           </div>
+         
         </div>
         <div
           class="ExpertiseContainer2 container mx-auto flex flex-wrap flex-row py-20 items-center"
@@ -340,6 +358,27 @@
                     <li class="w-full flex flex-col srr">
                       <h3
                         class="text-lg self-start font-extrabold"
+                        style="color: #4B8BBE"
+                      >
+                        Python (Learning)
+                      </h3>
+                      <span class="barr shadowreact">
+                        <span
+                          style="background-color: #4B8BBE"
+                          class="python"
+                        ></span>
+                      </span>
+                      <div
+                        class="counter self-end absolute text-lg font-extrabold"
+                        style="color: #4B8BBE"
+                        id="pythonCounter"
+                      >
+                        0%
+                      </div>
+                    </li>
+                    <li class="w-full flex flex-col srr">
+                      <h3
+                        class="text-lg self-start font-extrabold"
                         style="color: #84bf08"
                       >
                         NodeJS
@@ -363,7 +402,7 @@
                         class="text-lg self-start font-extrabold"
                         style="color: #9397ef"
                       >
-                        Flutter (Learning)
+                        Flutter
                       </h3>
                       <span class="barr shadowflutter">
                         <span
@@ -400,6 +439,7 @@
                         0%
                       </div>
                     </li>
+                  
                   </ul>
                 </div>
               </div>
@@ -532,7 +572,7 @@
               <p>LinkedIn</p>
             </div>
           </a>
-          <a target="_blank" href="https://www.facebook.com/yourprassamin/">
+          <a target="_blank" href="https://www.facebook.com/imprassamin">
             <div
               class="flex srr pras-hbg rounded-full gap-2 w-40 justify-center h-16 items-center"
             >
@@ -548,7 +588,7 @@
               <p>Threads</p>
             </div>
           </a>
-          <a target="_blank" href="https://wa.link/ufzysh">
+          <a target="_blank" href="https://wa.link/jua7rw">
             <div
               class="flex srr pras-hbg rounded-full gap-2 w-40 justify-center h-16 items-center"
             >
