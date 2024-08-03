@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <script src="js/redirect.js"></script>
+    <script>
+      if (window.location.pathname === "/") {
+        window.location.replace("https://prassamin.onrender.com/index.html");
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -16,6 +21,10 @@
     />
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
     <title>Portfolio</title>
+    <meta
+      name="google-site-verification"
+      content="vNaRXyhweWj5RilU-U-6IooUvk-43OoPckDRh7tN25Q"
+    />
   </head>
   <body class="pras-bg">
     <div id="cv-check">
@@ -47,9 +56,9 @@
             <li>about</li>
           </a>
         </ul>
-      </div> 
+      </div>
 
-      <div class="container w-full h-full  mx-auto nav-content flex">
+      <div class="container w-full h-full mx-auto nav-content flex">
         <div class="flex my-self srLeft">
           <h1 class="pras-mtext">PRAS Samin</h1>
           <h2 class="pras-mtext">Developer</h2>
@@ -141,19 +150,19 @@
         </div>
         <div class="flex flex-wrap projects justify-between">
           <a
-          href="https://tahmidzrahat.com/"
-          target="_blank"
-          class="w-1/4 p-3 proj"
-        >
-          <div>
-            <img src="images/tzr.png" alt="tzr" srcset="" />
-            <div class="dark-mask"></div>
-          </div>
-          <div class="proj-text">
-            <h2 class="pras-subtext">Full-Stack Project</h2>
-            <h1 class="pras-mtext">TRZ</h1>
-          </div>
-        </a>
+            href="https://tahmidzrahat.com/"
+            target="_blank"
+            class="w-1/4 p-3 proj"
+          >
+            <div>
+              <img src="images/tzr.png" alt="tzr" srcset="" />
+              <div class="dark-mask"></div>
+            </div>
+            <div class="proj-text">
+              <h2 class="pras-subtext">Full-Stack Project</h2>
+              <h1 class="pras-mtext">TRZ</h1>
+            </div>
+          </a>
           <a
             href="https://github.com/PRASSamin/JWTify"
             target="_blank"
@@ -186,7 +195,11 @@
             class="w-1/4 p-3 proj"
           >
             <div>
-              <img src="https://iili.io/JNsn2YF.jpg" alt="pras-book-api" srcset="" />
+              <img
+                src="https://iili.io/JNsn2YF.jpg"
+                alt="pras-book-api"
+                srcset=""
+              />
               <div class="dark-mask"></div>
             </div>
             <div class="proj-text">
@@ -194,9 +207,6 @@
               <h1 class="pras-mtext">PRAS BOOK API</h1>
             </div>
           </a>
-         
-          
-          
         </div>
       </section>
       <section class="">
