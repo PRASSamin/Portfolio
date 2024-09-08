@@ -1,5 +1,5 @@
-if (window.location.origin === "https://prassamin.github.io") {
-  window.location.replace("https://prassamin.onrender.com/");
+if (window.location.origin === "https://prassamin.github.io" || window.location.origin === "https://prassamin.onrender.com/") {
+  window.location.replace("https://pras.me");
 }
 
 const allowedPaths = [
@@ -11,5 +11,5 @@ const allowedPaths = [
 ];
 
 if (!allowedPaths.includes(window.location.pathname)) {
-  window.location.replace("https://prassamin.onrender.com/index.html");
+  window.location.replace("https://pras.com/index.html");
 }
