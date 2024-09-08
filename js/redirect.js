@@ -11,5 +11,5 @@ const allowedPaths = [
 ];
 
 if (!allowedPaths.includes(window.location.pathname)) {
-  window.location.replace("https://pras.com/index.html");
+  window.location.replace("https://pras.me/index.html");
 }
