@@ -1,15 +1,14 @@
-const cvCheack = document.getElementById('cv-check')
-const downloadBtn = document.getElementById('download-btn')
+const cvCheack = document.getElementById("cv-check");
+const downloadBtn = document.querySelector(".download-btn");
 
+downloadBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
 
-downloadBtn.addEventListener('click', async (event) => {
-    event.preventDefault();
+  const link = document.createElement("a");
 
-    cvCheack.style.opacity = "1";
-    cvCheack.style.transition = "0.3s all";
+  link.href = "/resume.pdf";
 
+  link.download = "pras_resume.pdf";
 
-    setTimeout(() => {
-        cvCheack.style.opacity = "0";
-    }, 1000);
-} ) 
+  link.click();
+});
