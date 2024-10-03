@@ -32,3 +32,7 @@
 
 ### 2.0.3 (2024-08-04)
 - added new project(TZR, JWTify, Library Management System) to the projects page
+
+### 2.0.7 (2024-09-25)
+- added resume file to download
+

@@ -768,12 +768,17 @@
               </a>
             </div>
             <h1 class="copyrighttxt pras-subtext">
-              ©2024 <a href="index.html">PRAS.</a> All rights reserved.
+              ©<span class="year"></span> <a href="index.html">PRAS.</a> All rights reserved.
             </h1>
           </div>
         </div>
       </section>
     </nav>
+
+    <script>
+      document.querySelector(".year").textContent = new Date().getFullYear();
+    </script>
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/theme.js"></script>

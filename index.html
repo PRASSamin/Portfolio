@@ -212,66 +212,9 @@
             <h2 class="pras-allpro-border pras-subtext">View all Projects</h2>
           </a>
         </div>
-        <div class="flex flex-wrap projects justify-between">
-          <a
-            href="https://tahmidzrahat.com/"
-            target="_blank"
-            class="w-1/4 p-3 proj"
-          >
-            <div>
-              <img src="images/tzr.png" alt="tzr" srcset="" />
-              <div class="dark-mask"></div>
-            </div>
-            <div class="proj-text">
-              <h2 class="pras-subtext">Full-Stack Project</h2>
-              <h1 class="pras-mtext">TRZ</h1>
-            </div>
-          </a>
-          <a
-            href="https://github.com/PRASSamin/JWTify"
-            target="_blank"
-            class="w-1/4 p-3 proj"
-          >
-            <div>
-              <img src="images/jwtify.svg" alt="jwtify" srcset="" />
-            </div>
-            <div class="proj-text">
-              <h2 class="pras-subtext">React App</h2>
-              <h1 class="pras-mtext">JWTify</h1>
-            </div>
-          </a>
-          <a
-            href="https://github.com/PRASSamin/Library-Management-System"
-            target="_blank"
-            class="w-1/4 p-3 proj"
-          >
-            <div>
-              <img src="images/lms.png" alt="lms" srcset="" />
-            </div>
-            <div class="proj-text">
-              <h2 class="pras-subtext">Full-Stack Project</h2>
-              <h1 class="pras-mtext truncat">Library Management System</h1>
-            </div>
-          </a>
-          <a
-            href="https://github.com/PRASSamin/BOOK-API"
-            target="_blank"
-            class="w-1/4 p-3 proj"
-          >
-            <div>
-              <img
-                src="https://iili.io/JNsn2YF.jpg"
-                alt="pras-book-api"
-                srcset=""
-              />
-              <div class="dark-mask"></div>
-            </div>
-            <div class="proj-text">
-              <h2 class="pras-subtext">flask api</h2>
-              <h1 class="pras-mtext">PRAS BOOK API</h1>
-            </div>
-          </a>
-        </div>
+        <div
+          class="flex flex-wrap projects justify-between projects-container"
+        ></div>
       </section>
       <section class="">
         <div class="expContainer">
@@ -286,7 +229,7 @@
               </div>
             </div>
             <div class="projcomp flex items-center mx-auto">
-              <h1 class="pras-mtext">200+</h1>
+              <h1 class="pras-mtext proj-am">200+</h1>
               <div class="flex flex-col ml-3">
                 <h2 class="pras-subtext">PROJECTS</h2>
                 <h2 class="pras-subtext">completed</h2>
@@ -503,7 +446,8 @@
               </a>
             </div>
             <h1 class="copyrighttxt pras-subtext">
-              ©2024 <a href="index.html">PRAS.</a> All rights reserved.
+              ©<span class="year"></span> <a href="index.html">PRAS.</a> All
+              rights reserved.
             </h1>
           </div>
         </div>
@@ -520,6 +464,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      document.querySelector(".year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
       ScrollReveal().reveal(".srr", {
