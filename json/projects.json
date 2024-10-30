@@ -1,5 +1,12 @@
 [
   {
+    "href": "https://pypi.org/project/PrasBridge/",
+    "imgSrc": "images/prasbridge.png",
+    "alt": "prasbridge",
+    "subText": "Python Package",
+    "mainText": "PrasBridge"
+  },
+  {
     "href": "https://prasme.onrender.com/",
     "imgSrc": "images/prasme.svg",
     "alt": "prasme",
