@@ -1,5 +1,12 @@
 [
   {
+    "href": "https://cli.pras.me/",
+    "imgSrc": "images/prascli.svg",
+    "alt": "pras-cli",
+    "subText": "CLI",
+    "mainText": "PRAS CLI"
+  },
+  {
     "href": "https://pypi.org/project/PrasBridge/",
     "imgSrc": "images/prasbridge.png",
     "alt": "prasbridge",
