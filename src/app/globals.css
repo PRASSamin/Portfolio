@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 201.82 24.44% 8.82%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
@@ -32,11 +32,19 @@
     --pras-logo: none;
     --shaded: 262 92% 51%;
     --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --foreground: 210 5.56% 92.94%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
@@ -62,6 +70,14 @@
     --pras-logo: brightness(0) saturate(100%) invert(100%) sepia(0%)
       saturate(7454%) hue-rotate(22deg) brightness(101%) contrast(86%);
     --shaded: 262 92% 51%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -73,10 +89,6 @@
     @apply bg-background text-foreground;
   }
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   img {
     @apply select-none;
     -webkit-user-drag: none;
@@ -86,12 +98,24 @@
     user-drag: none;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .allow-default * {
+    all: revert;
+  }
+
   .pras-logo {
     filter: var(--pras-logo);
   }
 
   .grad-travel {
     animation: travel 15s ease-in-out forwards infinite;
+  }
+
+  strong {
+    @apply text-muted-foreground bg-muted font-mono font-medium px-1 py-[2px] rounded;
   }
 
   @keyframes travel {
@@ -113,5 +137,51 @@
       filter: hue-rotate(0deg);
       rotate: -90deg;
     }
+  }
+
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+
+    100% {
+      top: 0%;
+    }
+  }
+
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+
+    40% {
+      transform: scaleX(1);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scaleX(0.2);
+      opacity: 0.4;
+    }
+  }
+
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: 0.2s;
+  }
+
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: 0.3s;
   }
 }

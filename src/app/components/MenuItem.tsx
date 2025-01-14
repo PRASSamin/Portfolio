@@ -1,19 +1,26 @@
 "use client";
+
 import React from "react";
 import { usePathname } from "next/navigation";
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 
-type MenuLinkProps = React.ComponentProps<typeof Link> & {
+type MenuLinkProps = {
   name: string;
-};
+  href: string;
+} & React.ComponentPropsWithoutRef<typeof Link>;
 
-export const MenuLink = React.forwardRef<LinkProps, MenuLinkProps>(
+export const MenuLink = React.forwardRef<HTMLAnchorElement, MenuLinkProps>(
   ({ name, href, ...props }, ref) => {
     const pathname = usePathname();
+    const isActive =
+      pathname === href || (href !== "/" && pathname.startsWith(href));
+
     return (
-      <Link {...props} href={href}>
-        <li className={pathname === href ? "font-bold" : ""}>{name}</li>
+      <Link {...props} href={href} ref={ref}>
+        <li className={isActive ? "font-bold" : ""}>{name}</li>
       </Link>
     );
   }
 );
+
+MenuLink.displayName = "MenuLink";
